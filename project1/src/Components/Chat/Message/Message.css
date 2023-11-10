@@ -1,0 +1,24 @@
+.Message{
+    margin: 10%;
+    background: #FFF;
+    
+    width: 850px;
+    height: 930px;
+    flex-shrink: 0;
+    /* visibility: hidden; */
+}
+.headMessage{
+    display: flex;
+}
+.UserMessage{
+    display: flex;
+}
+.messages{
+    width: 850px;
+    position: absolute;
+    bottom: 30px;
+}
+.typeMessages{
+    position: absolute;
+    bottom: 0px;
+}

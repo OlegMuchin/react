@@ -1,0 +1,25 @@
+.Footer{
+    width: 100%;
+    height: 373.401px;
+    flex-shrink: 0;
+    background: #514A7E;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textFooter{
+    color: #FFFDF5;
+    width: 1172px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.textFooter div{
+    display: flex;
+    flex-direction: column;
+}
+.textFooter div div{
+    display: flex;
+    flex-direction: column;
+}

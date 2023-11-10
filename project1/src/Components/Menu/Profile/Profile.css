@@ -1,0 +1,11 @@
+.profile{
+    margin: 20%;
+}
+.profile span{
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.nickname{
+    text-align: center;
+}

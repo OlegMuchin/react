@@ -1,0 +1,26 @@
+.navBar{
+    margin: 10%;
+    padding: 10%;
+    padding-top:10%;
+    padding-bottom: 10%;
+}
+.navBar a{
+    display:block;
+    width: 100%;
+    padding-top:15%;
+    padding-bottom: 15%;
+    cursor:pointer;
+    background-color:white;
+    text-align: left;
+    font-size: 11px;
+    text-decoration: none;
+    color: #707C97;
+    font-family: "Roboto variant8", sans-serif;
+    
+}
+.navBar a:hover{
+    color: #2A8BF2;
+}
+.exit{
+    margin-top:80%;
+}

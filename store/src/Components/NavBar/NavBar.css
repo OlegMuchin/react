@@ -1,0 +1,11 @@
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+}
+#menu{
+    display: flex;
+    width: 30px;
+    height: 30px;
+}

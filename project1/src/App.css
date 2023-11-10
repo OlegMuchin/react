@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    display: grid;
+    grid-template-areas: 
+    "Menu Content";
+    grid-template-columns: 2fr 10fr;
+}
+
+.Menu{
+    grid-area: Menu;
+}
+
+.content{
+    background: linear-gradient(180deg, #F3F3FB 0%, #FDFBFD 100%);
+}

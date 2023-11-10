@@ -1,0 +1,24 @@
+.Chat{
+    
+    display: grid;
+    grid-template-areas: 
+    "Chats message";
+    grid-template-columns: 1fr 1fr;
+
+    width: 1630px;
+    height: 1080px;
+    flex-shrink: 0;
+}
+.Chats{
+    grid-area: Chats;
+}
+.message{
+    grid-area: message;
+}
+.titleChat{
+    display: flex;
+}
+.BlockChat{
+    border-radius: 6px;
+    background: #FFF;
+}
