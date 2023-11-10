@@ -2,7 +2,7 @@ import React from 'react';
 import Icons from './Icons/Icons';
 import Picture from "../UI/Picture/Picture"
 import "./NavBar.css"
-import Catalog from './Catalog/Catalog';
+import Catalog from './NavCatalog/NavCatalog';
 
 function NavBar({id, ...props}) {
     return (

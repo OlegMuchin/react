@@ -1,5 +1,6 @@
 import React from 'react';
 import "./AboutStore.css"
+import Title from "../../TwoTitle/Title/Title"
 
 function AboutStore(props) {
     const arrayAboutStore = [
@@ -31,7 +32,7 @@ function AboutStore(props) {
     return (
         <section className='AboutStore' id='AboutStore'>
             <div className='textAboutStore'>
-                <label className='title'>Почему выбирают нас?</label>
+                <Title title="Почему выбирают нас?"/>
                 <div className='Causes'>
                     {arrayAboutStore.map((content, index)=>(
                         <label key={index} className={content.location}>{content.text}</label>

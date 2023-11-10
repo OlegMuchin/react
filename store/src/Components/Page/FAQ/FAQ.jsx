@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./FAQ.css"
-import Picture from "../UI/Picture/Picture"
+import Picture from "../../UI/Picture/Picture"
+import TwoTitle from '../../TwoTitle/TwoTitle';
 
 function FAQ(props) {
     let [arrayFAQ,setArrayFAQ] = useState([
@@ -41,17 +42,15 @@ function FAQ(props) {
         },
     ])
     const updateArrayFAQ = (e) => {
-        arrayFAQ[e.target.id].check = !arrayFAQ[e.target.id].check
-        setArrayFAQ(arrayFAQ)
-        console.log(arrayFAQ);
+        let newArray = arrayFAQ
+        newArray[e.target.id].check = !arrayFAQ[e.target.id].check
+        setArrayFAQ([...newArray])
+        console.log(newArray);
     }
     return (
-        <section className='FAQ'>
+        <section className='FAQ' id='FAQ'>
             <div className='contentFAQ'>
-                <div>
-                    <label>Часто задаваемые вопросы</label>
-                    <label>FAQ</label>
-                </div>
+                <TwoTitle title1="Часто задаваемые вопросы" title2="FAQ"/>
                 <div>
                     {arrayFAQ.map((content, index)=>(
                         <div key={index}>
@@ -59,11 +58,11 @@ function FAQ(props) {
                                 <label>{content.title}</label>
                                 <button onClick={updateArrayFAQ}><Picture imgId={index} src={content.check?"./img/icons/cross.svg":"./img/icons/plus.svg"}/></button>
                             </div>
-                            {/* {content.check && (
+                            {content.check && (
                                 <div>
                                     <label>{content.text}</label>
                                 </div>
-                        )} */}
+                        )}
                         </div>
                     ))}
                 </div>

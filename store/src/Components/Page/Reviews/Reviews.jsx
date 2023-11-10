@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Reviews.css"
 import TwoReviews from './TwoReviews/TwoReviews';
+import Title from "../../TwoTitle/Title/Title"
 
 function Reviews(props) {
     let arrayReviews = [
@@ -22,7 +23,7 @@ function Reviews(props) {
     return (
         <section className='Reviews'>
             <div className='textReviews'>
-                <label>Отзывы наших покупателей</label>
+                <Title title="Отзывы наших покупателей"/>
                 <TwoReviews arrayReviews={arrayReviews}/>
                 <button></button>
             </div>

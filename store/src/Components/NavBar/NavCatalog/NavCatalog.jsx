@@ -1,10 +1,10 @@
 import React from 'react';
-import "./Catalog.css"
+import "./NavCatalog.css"
 import Picture from "../../UI/Picture/Picture"
 
-function Catalog({id, ...props}) {
+function NavCatalog({id, ...props}) {
     return (
-        <div className='Catalog' id = {id}>
+        <div className='NavCatalog' id = {id}>
             <Picture src="./img/photo/LogoNeon.png"/>
             <div className='listCatalog'>
                 <label >Женщинам</label>
@@ -13,4 +13,4 @@ function Catalog({id, ...props}) {
     );
 }
 
-export default Catalog;
+export default NavCatalog;

@@ -1,14 +1,14 @@
 import React,{useState, useEffect} from 'react';
 import "./MainScreen.css"
-import Picture from "../../UI/Picture/Picture"
-import EllipseButton from '../../UI/button/EllipseButton/EllipseButton';
-import NavBar from '../../NavBar/NavBar';
+import Picture from "../../../UI/Picture/Picture"
+import EllipseButton from '../../../UI/button/EllipseButton/EllipseButton';
+import NavBar from '../../../NavBar/NavBar';
 
 function MainScreen({id, ...props}) {
     const [menu,setMenu] = useState(false)
     useEffect(()=>{
         const queryMenu = document.querySelector("#menu")
-        const queryCatalog = document.querySelector(".Catalog")
+        const queryNavCatalog = document.querySelector(".NavCatalog")
         const querycontentOrCatalog = document.querySelector(".contentOrCatalog")
         const queryContent = document.querySelector(".content")
         const queryNavBar = document.querySelector("#NavBar")
@@ -16,8 +16,8 @@ function MainScreen({id, ...props}) {
             setMenu(true)
         }
         document.body.addEventListener("click",(e)=>{
-            let block = queryCatalog.className === e.target.className
-            let itsBlock = queryCatalog.contains(e.target)
+            let block = queryNavCatalog.className === e.target.className
+            let itsBlock = queryNavCatalog.contains(e.target)
             let itMenu = queryMenu.className === e.target.className
             let itsMenu = queryMenu.contains(e.target)
             if (!(block || itsBlock || itMenu || itsMenu)) {
@@ -26,14 +26,14 @@ function MainScreen({id, ...props}) {
         })
         if (menu){
             queryMenu.style.display = "none"
-            queryCatalog.style.display = "flex"
+            queryNavCatalog.style.display = "flex"
             querycontentOrCatalog.style.display = "none"
             queryContent.style.justifyContent = "flex-end"
             queryNavBar.style.justifyContent = "flex-end"
         }
         else{
             queryMenu.style.display = "flex"
-            queryCatalog.style.display = "none"
+            queryNavCatalog.style.display = "none"
             querycontentOrCatalog.style.display = "flex"
             queryContent.style.justifyContent = "space-between"
             queryNavBar.style.justifyContent = "space-between"

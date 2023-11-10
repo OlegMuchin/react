@@ -1,7 +1,7 @@
 import React from 'react';
 import "./InvitationSuppliers.css"
-import MyInput from '../UI/MyInput/MyInput';
-import PushButton from '../UI/button/PushButton/PushButton';
+import MyInput from '../../UI/MyInput/MyInput';
+import PushButton from '../../UI/button/PushButton/PushButton';
 
 function InvitationSuppliers(props) {
     return (

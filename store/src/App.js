@@ -1,27 +1,19 @@
 import './App.css';
-import MainPage from './Components/MainPage/MainPage';
-import Footer from './Components/Footer/Footer';
-import InvitationSuppliers from './Components/InvitationSuppliers/InvitationSuppliers';
-import Cooperation from "./Components/Cooperation/Cooperation"
-import FAQ from "./Components/FAQ/FAQ"
-import Reviews from "./Components/Reviews/Reviews"
-import Stock from "./Components/Stock/Stock"
-import AboutStore from "./Components/AboutStore/AboutStore"
-import PushApplication from "./Components/PushApplication/PushApplication"
+import Catalog from './Components/Catalog/Catalog';
+import Page from "./Components/Page/Page"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  
   return (
-    <main className='App'>
-      <MainPage/>
-      <AboutStore/>
-      <Stock/>
-      <Reviews/>
-      <FAQ/>
-      <Cooperation/>
-      <InvitationSuppliers/>
-      <Footer/>
-      <PushApplication/>
-    </main>
+    <BrowserRouter>
+      <main className='App'>
+        <Routes>
+          <Route  path='/Catalog/*' element={<Catalog/>}/>
+          <Route  path='*' element={<Page/>}/>
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 

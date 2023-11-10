@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Review.css"
-import Picture from "../../../UI/Picture/Picture"
-import Stars from "../../../UI/Stars/Stars"
+import Picture from "../../../../UI/Picture/Picture"
+import Stars from "../../../../UI/Stars/Stars"
 
 function Review({avatar, amoutStars, text, nick, ...props}) {
     return (
